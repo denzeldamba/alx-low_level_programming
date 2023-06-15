@@ -1,2 +1,2 @@
-#!bin/bash
+#!/bin/bash
 gcc -c -Wall -Werror -Wextra -pedantic -std=gnu89 "$CFILEi" -o "${CFILE%.*}.o"
