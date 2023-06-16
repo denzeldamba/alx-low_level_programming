@@ -4,7 +4,7 @@
 /**
  * main - Entry point
  *
- * Description : Prints all the letters in small case from a-z and then in upper case from A-Z
+ * Description : Prints  letters in small case from a-z and upper case from A-Z
  *
  * Return: Always 0 (Success)
  */
