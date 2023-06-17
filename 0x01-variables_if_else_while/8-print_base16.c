@@ -1,11 +1,13 @@
 #include <stdio.h>
 
 /**
- * main- prints all the hexadecimal
+ * main - Entry point
  *
- * Return-0 (Success)
+ * Description: Prints all the hexadecimal digits.
+ *
+ * Return: 0 (Success)
  */
-int main(void)/** main - Entry point */
+int main(void)
 {
 	char digit;
 
@@ -16,5 +18,5 @@ int main(void)/** main - Entry point */
 
 	putchar('\n');
 
-	return (0);
+	return 0;
 }
