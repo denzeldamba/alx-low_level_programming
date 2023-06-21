@@ -5,7 +5,7 @@
  *
  * Return : 0 upon succesful execution
  */
-int main(void)
+int main(void)/* main - entry point */
 {
 	_putchar('_');
 	_putchar('p');
