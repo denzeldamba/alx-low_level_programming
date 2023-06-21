@@ -1,9 +1,9 @@
 #include "main.h"
 
-/**
+/*
  * main - Entry point
  *
- * Return : Always 0
+ * Return : 0 upon succesful execution
  */
 int main(void)
 {
