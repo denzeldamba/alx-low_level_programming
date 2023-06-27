@@ -11,8 +11,9 @@ int main(void)
 {
 	int limit = 1024;
 	int multiples_sum = 0;
+	int num;
 
-	for (int num = 0; num < limit; num++)
+	for (num = 0; num < limit; num++)
 	{
 		if (num % 3 == 0 || num % 5 == 0)
 			multiples_sum += num;
