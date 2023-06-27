@@ -18,4 +18,7 @@ int main(void)
 			multiples_sum += num;
 	}
 	printf("%d\n", multiples_sum);
+
+	return (0);
+
 }	
