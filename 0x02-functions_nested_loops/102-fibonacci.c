@@ -10,7 +10,7 @@
 int main(void)
 {
 	int count = 50;
-	int fib{count};
+	int fib[count];
 	int i;
 
 	fib[0] = 1;
