@@ -17,5 +17,5 @@ int main(void)
 		if (num % 3 == 0 || num % 5 == 0)
 			multiples_sum += num;
 	}
-	printf("%d\n" multiples_sum);
+	printf("%d\n", multiples_sum);
 }	
