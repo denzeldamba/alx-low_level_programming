@@ -12,13 +12,13 @@ int main(void)
 	int limit = 4000000;
 	int term1 = 1, term2 = 2;
 	int sum = 0;
+	int nextTerm
 
 	while (term1 <= limit)
 	{
 		if (term1 % 2 == 0)
 			sum += term1;
 
-		int nextTerm;
 		nextTerm = term1 + term2;
 		term1 = term2;
 		term2 = nextTerm;
