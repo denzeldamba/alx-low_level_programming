@@ -27,3 +27,15 @@ void print_to_98(int n)
 	_putchar('8');
 	_putchar('\n');
 }
+
+/**
+ * _putchar - Prints a single character to the standard output
+ * @c: THe character to be printed
+ *
+ * Return: On success, the character printed
+ *         On error, -1 is returned
+ */
+int _putchar(char c)
+{
+	return write(1, &c, 1);
+}
