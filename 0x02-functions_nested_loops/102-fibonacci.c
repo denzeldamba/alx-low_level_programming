@@ -3,7 +3,7 @@
 /**
  * main - Entry point of the program
  *
- * Description: Prints the first 50 Fibonacci numbers, separated by comma and space
+ * Description: Prints the first 50 Fibonacci numbers
  *
  * Return: 0 (Success)
  */
