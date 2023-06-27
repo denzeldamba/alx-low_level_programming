@@ -18,7 +18,7 @@ int main(void)
 		if (term1 % 2 == 0)
 			sum += term1;
 
-		int nextTerm
+		int nextTerm;
 		nextTerm = term1 + term2;
 		term1 = term2;
 		term2 = nextTerm;
