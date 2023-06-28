@@ -3,7 +3,7 @@
 /**
  * mul - Multiplies two intergers
  * @a: THe first interger
- * @b: The second interger 
+ * @b: The second interger
  *
  * Return: The product of a and b
  */
