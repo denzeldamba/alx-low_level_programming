@@ -6,9 +6,8 @@
  */
 void reset_to_98(int *n)
 {
-	*n = 98;
-
-	unsigned long int value = (unsigned long int)n;
+	int *n = 98;
+	value = *n;
 
 	if (value == 0)
 	{
