@@ -16,7 +16,7 @@ int _strlen(char *str)
 		str++;
 	}
 
-	return length;
+	return (length);
 }
 
 /**
@@ -36,7 +36,7 @@ void puts_half(char *str)
 	while (*(str + start_index) != '\0')
 	{
 		_putchar(*(str + start_index));
-		start_index++
+		start_index++;
 	}
 
 	_putchar('\n');
