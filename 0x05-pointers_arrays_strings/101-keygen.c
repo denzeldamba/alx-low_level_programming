@@ -13,7 +13,7 @@ int main(void)
 {
 	const int password_length = 10;
 	const char characters[] = "abcdefghijklmnopqrstuvwxyz0123456789";
-	char password
+	char password;
 	int i;
 	password[password_length + 1];
 
