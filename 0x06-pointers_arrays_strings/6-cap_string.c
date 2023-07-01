@@ -17,7 +17,6 @@ char *cap_string(char *str)
 		if (capitalize_next && islower(str[i]))
 			str[i] = toupper(str[i]);
 
-		capitalize_next = is_separator(str[i]);
 	}
 
 	return (str);
