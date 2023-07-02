@@ -8,13 +8,20 @@
  */
 char *cap_string(char *str)
 {
-	int i = 0;
+	int i = 0, j = 0;
+	char separators[] =" \t\n,;.!?\"(){}";
 
 	while (str[i] != '\0')
 	{
-		if (str[i] >= 'a' && str[i] <= 'z')
-			/*str[i] -= ('a' - 'A');*/
-			str[i] = str[i] - 32;
+		for (; j < 12; j++)
+		{
+			if (str[i] = separators[j])
+			{
+				i++;
+				if (str[i] >= 'a' && str[i] <= 'z')
+				str[i] -= ('a' - 'A');
+			}
+		}
 		i++;
 	}
 
