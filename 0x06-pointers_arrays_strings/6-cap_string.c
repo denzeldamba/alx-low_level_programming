@@ -1,34 +1,13 @@
 #include "main.h"
-#include <ctype.h>
-
-/**
- * cap_string - capitalizes all words of a string
- * @str: The string to modify.
- *
- * Return: A pointer to the modified string.
- */
-char *cap_string(char *str)
-{
-	int i;
-	int capitalize_next = 1;
-
-	for (i = 0; str[i] != '\0'; i++)
-	{
-		if (capitalize_next && islower(str[i]))
-			str[i] = toupper(str[i]);
-
-	}
-
-	return (str);
-}
+#include <stdbool.h>
 
 /**
  * is_separator - Check if a character is a word separator.
  * @c: The character to check.
  *
- * Return: 1 if the character is a separator, 0 otherwise.
+ * Return: true if the character is a separator, false otherwise.
  */
-int is_separator(char c)
+bool is_separator(char c)
 {
 	char separators[] = " \t\n,;.!?\"(){}";
 	int i;
@@ -36,8 +15,41 @@ int is_separator(char c)
 	for (i = 0; separators[i] != '\0'; i++)
 	{
 		if (c == separators[i])
-			return (1);
+			return (true);
 	}
 
-	return (0);
+	return (false);
+}
+
+/**
+ * cap_string - Capitalizes all word of a string.
+ * @str: THe string to capitalize.
+ *
+ * Return: A pointer to the modified string.
+ */
+char *cap_string(char *str)
+{
+	int i = 0;
+
+	if (str[i] >= 'a' && str[i] <= 'z')
+		str[i] -= ('a' - 'A');
+
+	while (str[i] != '\0')
+	{
+		if (is_separator(str[i]))
+		{
+		i++;
+		if (str[i] >= 'a' && str [i] <= 'z')
+			str[i] -= ('a' - 'A');
+		}
+		else
+		{
+			if (str[i] >= 'A' && str[i] <= 'Z')
+				str[i] += ('a' - 'A');
+		}
+
+		i++;
+	}
+
+	return (str);
 }
