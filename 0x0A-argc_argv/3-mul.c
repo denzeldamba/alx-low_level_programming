@@ -42,6 +42,7 @@ void print_error(void)
 		_putchar(*c);
 		c++;
 	}
+	_putchar('\n');
 }
 
 /**
