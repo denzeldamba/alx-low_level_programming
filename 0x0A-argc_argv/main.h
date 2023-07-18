@@ -11,5 +11,6 @@ void print_number(int num);
 int atoi_custom(char *str);
 void print_error();
 void print_newline();
+int count_digits(int num);
 
 #endif /* MAIN_H */
