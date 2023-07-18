@@ -11,7 +11,12 @@ int main(int argc __attribute__((unused)), char *argv[])
 {
 	char *program_name = argv[0];
 
-	_putchar(*program_name);
+	while (*program_name)
+	{
+		_putchar(*program_name);
+		program_name++;
+	}
+	_putchar('\n');
 
 	return (0);
 }
