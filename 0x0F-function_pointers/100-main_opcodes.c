@@ -2,15 +2,16 @@
 #include <stdlib.h>
 
 /**
- * main - Prints opcodes of main function
- * @argc: Number of arguments
- * @argv: Array of arguments
+ * main - prints its own opcodes
+ * @argc: number of arguments
+ * @argv: array of arguments
  *
- * Return: Always 0
+ * Return: Always 0 (Success)
  */
 int main(int argc, char *argv[])
 {
-	int n, i;
+	int bytes, i;
+	char *arr;
 
 	if (argc != 2)
 	{
@@ -18,24 +19,24 @@ int main(int argc, char *argv[])
 		exit(1);
 	}
 
-	n = atoi(argv[1]);
+	bytes = atoi(argv[1]);
 
-	if (n < 0)
+	if (bytes < 0)
 	{
 		printf("Error\n");
 		exit(2);
 	}
 
-	void *main_addr = (void *)&main;
+	arr = (char *)main;
 
-	unsigned char *code = (unsigned char *)main_addr;
-
-	for (i = 0; i < n; i++)
+	for (i = 0; i < bytes; i++)
 	{
-		printf("%02x", code[i]);
+		if (i == bytes - 1)
+		{
+			printf("%02hhx\n", arr[i]);
+			break;
+		}
+		printf("%02hhx ", arr[i]);
 	}
-
-	printf("\n");
-
-	return (0);
+	return (0);
 }
