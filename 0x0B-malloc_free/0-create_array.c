@@ -9,7 +9,7 @@
  * Return: On success, retuns a pointer to the created arrat.
  * On failure, returns NULL.
  */
-chr *create_array(unsigned int size, char c)
+char *create_array(unsigned int size, char c)
 {
 	if (size == 0)
 		return (NULL);
