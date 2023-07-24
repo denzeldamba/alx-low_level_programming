@@ -1,11 +1,11 @@
-#include "main.h"
 #include <stdlib.h>
+#include "main.h"
 
 /**
  * string_nconcat - Concatenates two strings.
  * @s1: The first string.
- * @s@: The second string.
- * @n: The maximum number of bytes of s@ to concatenate
+ * @s2: The second string.
+ * @n: The maximum number of bytes of s2 to concatenate
  *
  * Return: Pointer to thr concatenated string.
  */
