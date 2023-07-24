@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include "main.h"
+#include <ctype.h>
 
 /**
  * main - Multiplies two positive numbers.
@@ -40,7 +41,7 @@ int main(int argc, char *argv[])
 	}
 
 	_putchar(num1 * num2 + '0');
-	_putchar('\n);
+	_putchar('\n');
 
 	return (0);
 }
